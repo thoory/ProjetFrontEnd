@@ -5,7 +5,7 @@ node_js:
 before_script:
   - npm install -g @angular/cli
 script:
-  - ng build --env=prod /ProjetFrontEnd/
+  - ng build --env=prod --bh /ProjetFrontEnd/
   
 deploy:
   provider: pages
