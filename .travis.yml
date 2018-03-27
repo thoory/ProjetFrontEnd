@@ -1,8 +1,12 @@
-sudo: required
-addons:
-  chrome: stable
+language: node_js
 node_js:
   - "node"
+  
+before_script:
+  - npm install -g @angular/cli
+script:
+  - ng build --env=prod
+  
 deploy:
   provider: pages
   skip-cleanup: true
