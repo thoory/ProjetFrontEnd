@@ -6,12 +6,16 @@ import { Town } from './town';
 @Injectable()
 export class TownService {
   
-  private URL = "http://lpa2sgadot.herokuapp.com/towns"
-  //private URL = "https://projet-thoory-lpa2.herokuapp.com/towns"
+  //private URL = "http://lpa2sgadot.herokuapp.com/towns"
+  private URL = "https://projet-thoory-lpa2.herokuapp.com/towns"
   
   constructor(private http: HttpClient) { }
 
   getTown(id : number) : Observable<Town> {
     return this.http.get<Town>(`${this.URL}/${id}.json`);
   }
+  
+  //getTown() {
+  //  return this.http.get<XXX>(`${this.URL}.json`);
+  //}
 }
