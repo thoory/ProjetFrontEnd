@@ -1,1 +1,3 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+p {
+    font-size: 3em;
+}

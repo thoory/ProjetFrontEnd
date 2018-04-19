@@ -1,2 +1,0 @@
-ng serve --host=0.0.0.0 --disable-host-check
-http://port-4200.projetfrontend-tomtomory94143.codeanyapp.com/
