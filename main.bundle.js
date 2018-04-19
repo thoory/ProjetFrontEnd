@@ -195,10 +195,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var TownService = /** @class */ (function () {
-    //private URL = "https://projet-thoory-lpa2.herokuapp.com/towns"
     function TownService(http) {
         this.http = http;
-        this.URL = "http://lpa2sgadot.herokuapp.com/towns";
+        //private URL = "http://lpa2sgadot.herokuapp.com/towns"
+        this.URL = "https://projet-thoory-lpa2.herokuapp.com/towns";
     }
     TownService.prototype.getTown = function (id) {
         return this.http.get(this.URL + "/" + id + ".json");
